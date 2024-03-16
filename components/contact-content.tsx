@@ -1,7 +1,81 @@
+import Link from "next/link";
+import { TextGenerateEffect } from "./ui/text-generating-effect";
+import { TypewriterEffect } from "./ui/typewritter";
+import Image from "next/image";
+
 export default function contactContent() {
+  const words = [
+    {
+      text: "Hi",
+      className: "font-bold text-main-light",
+    },
+  ];
+  const para = `Need a beautiful, well-structured website that you can own and maintain yourself? Get in touch. Lets create whats in your mind to reality. `;
   return (
-    <div>
-      <p>Contact tab</p>
+    <div className="">
+      <div>
+        <TypewriterEffect words={words} />
+      </div>
+      <div>
+        <TextGenerateEffect words={para} />;
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center justify-center mx-auto w-full max-w-[90%] gap-4 mt-20">
+        <Link
+          href="https://github.com/harish-khandre"
+          target="_blank"
+          className=" bg-zinc-300 flex items-center justify-center w-20 h-20 border-2 border-zinc-600 rounded-full p-4 mx-auto transition-all duration-300 group hover:scale-105 hover:bg-zinc-50"
+        >
+          <Image
+            src="/gitub.png"
+            className="relative transition-all duration-300 group-hover:scale-125"
+            width={50}
+            height={50}
+            alt="github"
+          />
+        </Link>
+
+        <Link
+          target="_blank"
+          href="https://twitter.com/KhandreHarish"
+          className=" bg-zinc-300 flex items-center justify-center w-20 h-20 border-2 border-zinc-600 rounded-full p-4 mx-auto transition-all duration-300 group hover:scale-105 hover:bg-zinc-50"
+        >
+          <Image
+            src="/twitter.png"
+            className="relative transition-all duration-300 group-hover:scale-125"
+            width={50}
+            height={50}
+            alt="github"
+          />
+        </Link>
+
+        <Link
+          href="mailto:1.harishkhandre@gmail.com"
+          target="_blank"
+          className=" bg-zinc-300 flex items-center justify-center w-20 h-20 border-2 border-zinc-600 rounded-full p-4 mx-auto transition-all duration-300 group hover:scale-105 hover:bg-zinc-50"
+        >
+          <Image
+            src="/gmail.png"
+            className="relative transition-all duration-300 group-hover:scale-125"
+            width={50}
+            height={50}
+            alt="github"
+          />
+        </Link>
+
+        <Link
+          href="https://www.linkedin.com/in/harish-khandre/"
+          target="_blank"
+          className=" bg-zinc-300 flex items-center justify-center w-20 h-20 border-2 border-zinc-600 rounded-full p-4 mx-auto transition-all duration-300 group hover:scale-105 hover:bg-zinc-50"
+        >
+          <Image
+            src="/linkedin.png"
+            className="relative transition-all duration-300 group-hover:scale-125"
+            width={50}
+            height={50}
+            alt="github"
+          />
+        </Link>
+      </div>
     </div>
   );
 }

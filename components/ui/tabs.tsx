@@ -40,7 +40,7 @@ export const Tabs = ({
     <>
       <div
         className={cn(
-          " flex flex-row items-center justify-start [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full",
+          "flex flex-row items-center justify-start [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full",
           containerClassName,
         )}
       >
@@ -62,13 +62,13 @@ export const Tabs = ({
                 layoutId="clickedbutton"
                 transition={{ type: "spring", bounce: 0.3, duration: 0.6 }}
                 className={cn(
-                  "absolute inset-1  bg-zinc-700  rounded-full ",
+                  "absolute inset-1  bg-zinc-700 rounded-full",
                   activeTabClassName,
                 )}
               />
             )}
 
-            <span className=" relative block border shadow-[#AD8B7340_0px_0px_0px_2px,_#AD8B73A5_0px_4px_6px_-1px,_rgba(255,_255,_255,_0.08)_0px_1px_0px_inset] rounded-full px-4 py-1 border-zinc-50 text-white">
+            <span className=" relative block border-2 shadow-[#ffffff40_0px_0px_0px_2px,_#ffffffa5_0px_4px_6px_-1px,_rgba(255,_255,_255,_0.08)_0px_1px_0px_inset] rounded-full px-8 py-1 border-zinc-50 text-white">
               {tab.title}
             </span>
           </button>
@@ -79,7 +79,7 @@ export const Tabs = ({
         active={active}
         key={active.value}
         hovering={hovering}
-        className={cn("mt-2", contentClassName)}
+        className={cn("mt-4", contentClassName)}
       />
     </>
   );
@@ -100,7 +100,7 @@ export const FadeInDiv = ({
     return tab.value === tabs[0].value;
   };
   return (
-    <div className="relative w-full h-full">
+    <div className="relative w-full h-full ">
       {tabs.map((tab, idx) => (
         <motion.div
           key={tab.value}
@@ -115,7 +115,7 @@ export const FadeInDiv = ({
             y: isActive(tab) ? [0, 40, 0] : 0,
           }}
           className={cn(
-            " svgwrapper border-2 border-zinc-50  shadow-[#AD8B7340_0px_0px_0px_2px,_#AD8B73A5_0px_4px_6px_-1px,_rgba(255,_255,_255,_0.08)_0px_1px_0px_inset] rounded-2xl w-full h-full pb-8 absolute top-0 left-0",
+            "svgwrapper border-2 border-zinc-50  shadow-[#ffffff40_0px_0px_0px_2px,_#ffffffa5_0px_4px_6px_-1px,_rgba(255,_255,_255,_0.08)_0px_1px_0px_inset] rounded-2xl w-full h-full pb-8 absolute top-0 left-0",
             className,
           )}
         >
