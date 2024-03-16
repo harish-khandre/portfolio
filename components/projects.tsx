@@ -27,19 +27,19 @@ export const projects = [
     link: "https://google.com",
   },
   {
-    title: "uvan",
+    title: "Uvan",
     description:
       "Bloggin website for youtuber called to educate the people about government schemes and policies",
     link: "https://uvan.tech",
   },
   {
-    title: "notes with gpt",
+    title: "Notes with GPT",
     description:
       "created a web app to take notes as well as get boost and completion using gpt-3",
     link: "https://amazon.com",
   },
   {
-    title: "Samadhan website",
+    title: "Samadhan Enterprise",
     description:
       "A website for a real-estate company called Samadhan that provides solutions for the problems faced by the people in the context of real-estate and property management",
     link: "https://microsoft.com",
