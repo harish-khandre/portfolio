@@ -10,7 +10,7 @@ export default function contactContent() {
       className: "font-bold text-main-light",
     },
   ];
-  const para = `Need a beautiful, well-structured website that you can own and maintain yourself? Get in touch. Lets create whats in your mind to reality. `;
+  const para = `Need a beautiful, well-structured website that you can own and maintain yourself? Get in touch. Lets create whats in your mind to reality. `
   return (
     <div className="">
       <div>
