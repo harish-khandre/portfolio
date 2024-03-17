@@ -1,26 +1,18 @@
 import Link from "next/link";
-import { TextGenerateEffect } from "./ui/text-generating-effect";
-import { TypewriterEffect } from "./ui/typewritter";
 import Image from "next/image";
+import { AnimatedText } from "./ui/animated-text";
 
 export default function contactContent() {
-  const words = [
-    {
-      text: "Hi,",
-      className: "font-bold text-main-light",
-    },
-  ];
-  const para =
-    "Need a beautiful, well-structured website that you can own and maintain yourself? Get in touch lets create whats in your mind to reality.";
   return (
-    <div className="">
+    <>
       <div>
-        <TypewriterEffect words={words} />
+        <AnimatedText
+          el="div"
+          heading="Hi!"
+          para="Need a beautiful, well-structured website that you can own and maintain yourself? Get in touch lets create whats in your mind to reality."
+        />
       </div>
-      <div>
-        <TextGenerateEffect words={para} />
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center justify-center mx-auto w-full max-w-[90%] gap-4 mt-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center justify-center mx-auto w-full max-w-[90%] gap-4 sm:mt-20 space-y-5">
         <Link
           href="https://github.com/harish-khandre"
           target="_blank"
@@ -77,6 +69,6 @@ export default function contactContent() {
           />
         </Link>
       </div>
-    </div>
+    </>
   );
 }

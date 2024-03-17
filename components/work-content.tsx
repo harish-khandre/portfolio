@@ -1,27 +1,10 @@
 import { Projects } from "./projects";
-import { TypewriterEffect } from "./ui/typewritter";
+import { AnimatedText } from "./ui/animated-text";
 
 export default function WorkContent() {
-  const para = [
-    {
-      text: "These",
-    },
-    {
-      text: "are",
-    },
-    {
-      text: "my",
-    },
-    {
-      text: "few",
-    },
-    {
-      text: "Projects",
-    },
-  ];
   return (
     <div>
-      <TypewriterEffect words={para} />
+      <AnimatedText el="h1" heading="These are my few projects" />
       <Projects />
     </div>
   );
