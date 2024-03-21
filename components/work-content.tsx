@@ -1,3 +1,4 @@
+"use client";
 import { Projects } from "./projects";
 import { AnimatedText } from "./ui/animated-text";
 

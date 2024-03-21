@@ -1,3 +1,4 @@
+"use client";
 import { AnimatedText } from "./ui/animated-text";
 
 export default function AboutContent() {

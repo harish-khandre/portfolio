@@ -1,3 +1,4 @@
+"use client";
 import AboutContent from "./about-content";
 import ContactContent from "./contact-content";
 import { Tabs } from "./ui/tabs";
