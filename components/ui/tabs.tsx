@@ -115,7 +115,7 @@ export const FadeInDiv = ({
             y: isActive(tab) ? [0, 40, 0] : 0,
           }}
           className={cn(
-            "svgwrapper border-2 border-zinc-50  shadow-[#ffffff40_0px_0px_0px_2px,_#ffffffa5_0px_4px_6px_-1px,_rgba(255,_255,_255,_0.08)_0px_1px_0px_inset] rounded-2xl w-full h-full pb-8 absolute top-0 left-0",
+            "bg-gradient-to-r from-zinc-900 to-zinc-700  border-2 border-zinc-50  shadow-[#ffffff40_0px_0px_0px_2px,_#ffffffa5_0px_4px_6px_-1px,_rgba(255,_255,_255,_0.08)_0px_1px_0px_inset] rounded-2xl w-full h-full pb-8 absolute top-0 left-0",
             className,
           )}
         >

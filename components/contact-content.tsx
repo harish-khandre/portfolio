@@ -18,7 +18,7 @@ export default function contactContent() {
         <Link
           href="https://github.com/harish-khandre"
           target="_blank"
-          className=" bg-zinc-300 flex items-center justify-center w-20 h-20 border-2 border-zinc-600 rounded-full p-4 mx-auto transition-all duration-300 group hover:scale-105 hover:bg-zinc-50"
+          className=" bg-zinc-100 flex items-center justify-center w-20 h-20 border-2 border-zinc-600 rounded-full p-4 mx-auto transition-all duration-300 group hover:scale-105 hover:bg-zinc-50"
         >
           <Image
             src="/gitub.png"
@@ -32,7 +32,7 @@ export default function contactContent() {
         <Link
           target="_blank"
           href="https://twitter.com/KhandreHarish"
-          className=" bg-zinc-300 flex items-center justify-center w-20 h-20 border-2 border-zinc-600 rounded-full p-4 mx-auto transition-all duration-300 group hover:scale-105 hover:bg-zinc-50"
+          className=" bg-zinc-100 flex items-center justify-center w-20 h-20 border-2 border-zinc-600 rounded-full p-4 mx-auto transition-all duration-300 group hover:scale-105 hover:bg-zinc-50"
         >
           <Image
             src="/twitter.png"
@@ -46,7 +46,7 @@ export default function contactContent() {
         <Link
           href="mailto:1.harishkhandre@gmail.com"
           target="_blank"
-          className=" bg-zinc-300 flex items-center justify-center w-20 h-20 border-2 border-zinc-600 rounded-full p-4 mx-auto transition-all duration-300 group hover:scale-105 hover:bg-zinc-50"
+          className=" bg-zinc-100 flex items-center justify-center w-20 h-20 border-2 border-zinc-600 rounded-full p-4 mx-auto transition-all duration-300 group hover:scale-105 hover:bg-zinc-50"
         >
           <Image
             src="/gmail.png"
@@ -60,7 +60,7 @@ export default function contactContent() {
         <Link
           href="https://www.linkedin.com/in/harish-khandre/"
           target="_blank"
-          className=" bg-zinc-300 flex items-center justify-center w-20 h-20 border-2 border-zinc-600 rounded-full p-4 mx-auto transition-all duration-300 group hover:scale-105 hover:bg-zinc-50"
+          className=" bg-zinc-100 flex items-center justify-center w-20 h-20 border-2 border-zinc-600 rounded-full p-4 mx-auto transition-all duration-300 group hover:scale-105 hover:bg-zinc-50"
         >
           <Image
             src="/linkedin.png"
