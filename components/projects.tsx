@@ -26,7 +26,7 @@ export const projects = [
     title: "Covet",
     description:
       "A platform that connects social media artists and local artists with potential buyers as well as thier fans. It provides a platform for artisans to showcase their work and sell their products.",
-    link: "https://google.com",
+    link: "https://cover.live",
   },
   {
     title: "Uvan",
@@ -35,15 +35,15 @@ export const projects = [
     link: "https://uvan.tech",
   },
   {
-    title: "Notes with GPT",
-    description:
-      "created a web app to take notes as well as get boost and completion using gpt-3",
-    link: "https://amazon.com",
-  },
-  {
     title: "Samadhan Enterprise",
     description:
       "A website for a real-estate company called Samadhan that provides solutions for the problems faced by the people in the context of real-estate and property management",
     link: "https://microsoft.com",
+  },
+  {
+    title: "Other Projects",
+    description:
+      "Notes with GPT, Thread's clone, Netflix clone and many more projects",
+    link: "https://github.com/harish-khandre?tab=repositories",
   },
 ];
