@@ -26,7 +26,7 @@ export const projects = [
     title: "Covet",
     description:
       "A platform that connects social media artists and local artists with potential buyers as well as thier fans. It provides a platform for artisans to showcase their work and sell their products.",
-    link: "https://cover.live",
+    link: "https://covet.live",
   },
   {
     title: "Uvan",
