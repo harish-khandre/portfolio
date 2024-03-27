@@ -38,7 +38,7 @@ export const projects = [
     title: "Samadhan Enterprise",
     description:
       "A website for a real-estate company called Samadhan that provides solutions for the problems faced by the people in the context of real-estate and property management",
-    link: "https://microsoft.com",
+    link: "https://se-eta.vercel.app/",
   },
   {
     title: "Other Projects",
