@@ -31,7 +31,7 @@ export const projects = [
   {
     title: "Uvan",
     description:
-      "Bloggin website for youtuber called to educate the people about government schemes and policies",
+      "Blogging web app With CMS for youtube channel called UvanTech, Web app is used to educate the people about government schemes and policies",
     link: "https://uvan.tech",
   },
   {
