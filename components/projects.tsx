@@ -44,6 +44,6 @@ export const projects = [
     title: "Other Projects",
     description:
       "Notes with GPT, Thread's clone, Netflix clone and many more projects",
-    link: "https://github.com/harish-khandre?tab=repositories",
+    link: "https://github.com/harish-khandre",
   },
 ];
