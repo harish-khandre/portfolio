@@ -52,7 +52,7 @@ export const Tabs = ({
             }}
             onMouseEnter={() => setHovering(true)}
             onMouseLeave={() => setHovering(false)}
-            className={cn("relative px-1 py-1 rounded-full", tabClassName)}
+            className={cn("relative px-1 py-1 mx-1 rounded-full", tabClassName)}
             style={{
               transformStyle: "preserve-3d",
             }}
@@ -62,13 +62,13 @@ export const Tabs = ({
                 layoutId="clickedbutton"
                 transition={{ type: "spring", bounce: 0.3, duration: 0.6 }}
                 className={cn(
-                  "absolute inset-1  bg-zinc-700 rounded-full",
+                  "absolute inset-0 bg-gray-200 dark:bg-zinc-800 rounded-full ",
                   activeTabClassName,
                 )}
               />
             )}
 
-            <span className=" relative block border-2 shadow-[#ffffff40_0px_0px_0px_2px,_#ffffffa5_0px_4px_6px_-1px,_rgba(255,_255,_255,_0.08)_0px_1px_0px_inset] rounded-full px-8 py-1 border-zinc-50 text-white">
+            <span className=" relative block rounded-full px-8 py-1  text-white">
               {tab.title}
             </span>
           </button>
@@ -79,7 +79,7 @@ export const Tabs = ({
         active={active}
         key={active.value}
         hovering={hovering}
-        className={cn("mt-6", contentClassName)}
+        className={cn("mt-16", contentClassName)}
       />
     </>
   );
@@ -115,7 +115,7 @@ export const FadeInDiv = ({
             y: isActive(tab) ? [0, 40, 0] : 0,
           }}
           className={cn(
-            "bg-gradient-to-r from-zinc-900 to-zinc-700  border-2 border-zinc-50  shadow-[#ffffff40_0px_0px_0px_2px,_#ffffffa5_0px_4px_6px_-1px,_rgba(255,_255,_255,_0.08)_0px_1px_0px_inset] rounded-2xl w-full h-full pb-8 absolute top-0 left-0",
+            "bg-zinc-950 border-2 border-zinc-50  shadow-[#ffffff40_0px_0px_0px_2px,_#ffffffa5_0px_4px_6px_-1px,_rgba(255,_255,_255,_0.08)_0px_1px_0px_inset] rounded-2xl w-full h-full pb-8 absolute top-0 left-0",
             className,
           )}
         >

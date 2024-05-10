@@ -23,3 +23,7 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   display: none;
 }
+
+body {
+  @apply bg-zinc-950;
+}
