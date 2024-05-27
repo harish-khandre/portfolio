@@ -1,5 +1,6 @@
 "use client";
 
+import useWindowSize from "@/hooks/screen-size";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
@@ -21,7 +22,22 @@ export const AnimatedText = ({
 }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { amount: 0.5, once: true });
+  const size = useWindowSize();
 
+  // @ts-ignore
+  if (size.width <= 1024) {
+    return (
+      <div>
+        <Wrapper className="space-y-8">
+          <span className="font-bold text-2xl sm:text-4xl">{heading}</span>
+          <div className="h-4" />
+          <span className="font-semibold text-lg sm:text-2xl">{para}</span>
+          <div className="h-4" />
+          <span className="font-semibold text-lg sm:text-2xl">{para2}</span>
+        </Wrapper>
+      </div>
+    );
+  }
   return (
     <Wrapper className="space-y-8">
       <motion.span
