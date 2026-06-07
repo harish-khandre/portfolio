@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function Bio() {
   return (
     <motion.p
-      className="font-sans text-sm leading-relaxed text-fg/75"
+      className="font-sans text-[0.9375rem] leading-7 text-fg/70"
       initial={{ opacity: 0, y: 8 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}

@@ -1,41 +1,62 @@
-const skills = [
-  "TypeScript",
-  "React",
-  "Next.js",
-  "NestJS",
-  "Node.js",
-  "Python",
-  "PostgreSQL",
-  "MongoDB",
-  "Redis",
-  "Prisma",
-  "Drizzle",
-  "TanStack Query",
-  "TRPC",
-  "Zustand",
-  "Tailwind",
-  "ShadcnUI",
-  "Mastra.ai",
-  "Claude API",
-  "Docker",
-  "AWS",
-  "SST",
-  "GitHub Actions",
+const skillGroups = [
+  {
+    label: "Frontend",
+    skills: [
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Vite",
+      "Zustand",
+      "TanStack Query",
+      "TRPC",
+      "Tailwind",
+      "ShadcnUI",
+    ],
+  },
+  {
+    label: "Backend",
+    skills: [
+      "NestJS",
+      "Node.js",
+      "Hono",
+      "Express",
+      "Prisma",
+      "Drizzle",
+      "Python",
+      "WebSockets",
+    ],
+  },
+  {
+    label: "Database",
+    skills: ["PostgreSQL", "MongoDB", "Redis"],
+  },
+  {
+    label: "AI & Infra",
+    skills: [
+      "Mastra.ai",
+      "Claude API",
+      "Docker",
+      "AWS",
+      "SST",
+      "GitHub Actions",
+      "Claude Code",
+    ],
+  },
 ];
 
 export default function Skills() {
   return (
-    <section>
-      <p className="font-mono text-xs uppercase tracking-widest text-muted">
-        Skills
-      </p>
-      <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2">
-        {skills.map((skill) => (
-          <span key={skill} className="font-mono text-xs text-fg/55">
-            {skill}
+    <section className="space-y-4">
+      {skillGroups.map((group) => (
+        <div key={group.label} className="flex gap-6">
+          <span className="w-20 shrink-0 font-mono text-xs text-muted/50 pt-px">
+            {group.label}
           </span>
-        ))}
-      </div>
+          <p className="font-mono text-xs leading-5 text-fg/50">
+            {group.skills.join(" · ")}
+          </p>
+        </div>
+      ))}
     </section>
   );
 }

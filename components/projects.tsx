@@ -34,25 +34,24 @@ export function Projects() {
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="font-sans text-sm font-medium text-fg transition-colors hover:text-accent"
+              className="group inline-flex items-baseline gap-1 font-sans text-sm font-medium text-fg transition-colors hover:text-accent"
             >
-              {project.title} ↗
+              {project.title}
+              <span className="text-xs text-muted transition-colors group-hover:text-accent">
+                ↗
+              </span>
             </Link>
           ) : (
             <span className="font-sans text-sm font-medium text-fg">
               {project.title}
             </span>
           )}
-          <p className="mt-1 font-sans text-sm text-fg/65">
+          <p className="mt-1.5 font-sans text-sm leading-6 text-fg/60">
             {project.description}
           </p>
-          <div className="mt-2 flex flex-wrap gap-3">
-            {project.tags.map((tag) => (
-              <span key={tag} className="font-mono text-xs text-muted">
-                {tag}
-              </span>
-            ))}
-          </div>
+          <p className="mt-2 font-mono text-xs text-muted/70">
+            {project.tags.join(" · ")}
+          </p>
         </div>
       ))}
     </div>
