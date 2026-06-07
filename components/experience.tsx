@@ -1,54 +1,54 @@
-import { Metric, Tech } from "@/components/ui/highlight";
+import { Metric, Tech } from '@/components/ui/highlight'
 
 const items = [
   {
-    title: "National Investment Pipeline",
-    label: "MORTH / NHIA",
+    title: 'National Investment Pipeline',
+    label: 'MORTH / NHIA',
     accent: null,
     desc: (
       <>
         Built data ingestion and reporting pipelines for India&apos;s National
-        Investment Pipeline platform — syncing project data across{" "}
-        <Metric>20M+ records</Metric> in coordination with the Ministry of
+        Investment Pipeline platform — syncing project data across{' '}
+        <Metric>25M+ records</Metric> in coordination with the Ministry of
         Statistics. Developed <Tech>React</Tech> dashboards for project tracking
         and <Tech>NestJS</Tech> APIs for real-time data access across government
         stakeholders.
       </>
     ),
-    tech: "TypeScript · React · NestJS · PostgreSQL",
+    tech: 'TypeScript · React · NestJS · PostgreSQL'
   },
   {
-    title: "SSC Analytics Dashboard",
+    title: 'SSC Analytics Dashboard',
     label: null,
-    accent: "67% perf ↑",
+    accent: '67% perf ↑',
     desc: (
       <>
         Diagnosed and resolved critical performance bottlenecks across a
         high-traffic analytics dashboard. Introduced <Tech>Redis</Tech> caching
         layers, rewrote slow aggregation queries, and restructured database
         indexes — achieving a <Metric>67% reduction</Metric> in API response
-        times. Oversaw data migration from <Metric>2M to 20M+ records</Metric>{" "}
-        with zero downtime.
+        times. Oversaw data migration of<Metric>20M+ records</Metric> with zero
+        downtime.
       </>
     ),
-    tech: "TypeScript · NestJS · Redis · PostgreSQL",
+    tech: 'TypeScript · NestJS · Redis · PostgreSQL'
   },
   {
-    title: "Ministry of Social Justice",
+    title: 'Ministry of Social Justice',
     label: null,
     accent: null,
     desc: (
       <>
         Designed and implemented role-based access control across a multi-tenant
-        government analytics system covering{" "}
+        government analytics system covering{' '}
         <Metric>18+ social welfare schemes</Metric>. Built reporting pipelines
         to aggregate scheme-level KPIs and operational metrics for ministry
         officials, with configurable <Tech>RBAC</Tech> policies per department.
       </>
     ),
-    tech: "TypeScript · React · NestJS · PostgreSQL",
-  },
-];
+    tech: 'TypeScript · React · NestJS · PostgreSQL'
+  }
+]
 
 export default function Experience() {
   return (
@@ -94,5 +94,5 @@ export default function Experience() {
         </p>
       </div>
     </div>
-  );
+  )
 }
