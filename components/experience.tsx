@@ -66,7 +66,7 @@ export default function Experience() {
       <ul className="mt-6 space-y-8">
         {items.map((item) => (
           <li key={item.title}>
-            <p className="font-sans text-sm font-medium text-fg">
+            <p className="font-sans text-[1.0625rem] font-medium text-fg">
               {item.title}
               {item.label && (
                 <span className="ml-2 font-mono text-xs font-normal text-muted">
@@ -79,16 +79,16 @@ export default function Experience() {
                 </span>
               )}
             </p>
-            <p className="mt-2 font-sans text-sm leading-7 text-fg/60">
+            <p className="mt-2 font-sans text-[1.0625rem] leading-[1.6] text-fg/75">
               {item.desc}
             </p>
-            <p className="mt-2 font-mono text-xs text-muted/60">{item.tech}</p>
+            <p className="mt-2 font-mono text-xs text-muted/80">{item.tech}</p>
           </li>
         ))}
       </ul>
 
       <div className="mt-6 border-l border-divider pl-4">
-        <p className="font-sans text-xs leading-6 text-fg/35">
+        <p className="font-sans text-xs leading-6 text-fg/50">
           Physics Wallah (PMC) · Char Dham security audit · Payload CMS · SST ·
           TRPC
         </p>

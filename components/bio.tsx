@@ -6,7 +6,7 @@ import { Metric, Tech } from "@/components/ui/highlight";
 export default function Bio() {
   return (
     <motion.p
-      className="font-sans text-[0.9375rem] leading-7 text-fg/70"
+      className="font-sans text-[1.0625rem] leading-[1.6] text-fg/80"
       initial={{ opacity: 0, y: 8 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}

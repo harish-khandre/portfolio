@@ -6,6 +6,7 @@ import Header from "@/components/header";
 import Bio from "@/components/bio";
 import WorkSection from "@/components/work-section";
 import Skills from "@/components/skills";
+import { ModeToggle } from "@/components/mode-toggle";
 
 const Divider = () => <div className="my-12 border-t border-divider" />;
 
@@ -49,6 +50,8 @@ export default function Home() {
               </Link>
             </span>
           ))}
+          <span className="select-none opacity-30">·</span>
+          <ModeToggle />
         </motion.nav>
 
         <Divider />
@@ -60,12 +63,12 @@ export default function Home() {
 
         <div className="mt-16 space-y-4">
           <div className="rounded-md border border-divider p-5 text-center">
-            <p className="mb-2 font-sans text-sm text-fg/45">
+            <p className="mb-2 font-sans text-[1.0625rem] text-fg/45">
               Want to build something together?
             </p>
             <Link
               href="mailto:1.harishkhandre@gmail.com"
-              className="font-mono text-sm text-accent transition-colors hover:text-accent/70"
+              className="font-mono text-[1.0625rem] text-accent transition-colors hover:text-accent/70"
             >
               1.harishkhandre@gmail.com →
             </Link>

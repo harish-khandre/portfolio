@@ -53,10 +53,10 @@ export default function Skills() {
       <div className="space-y-3.5">
         {skillGroups.map((group) => (
           <div key={group.label} className="flex gap-6">
-            <span className="w-20 shrink-0 pt-px font-mono text-xs text-muted/40">
+            <span className="w-20 shrink-0 pt-px font-mono text-xs text-muted">
               {group.label}
             </span>
-            <p className="font-mono text-xs leading-5 text-fg/55">
+            <p className="font-sans text-[0.9375rem] leading-6 text-fg/80">
               {group.skills.join(" · ")}
             </p>
           </div>

@@ -54,7 +54,7 @@ export function Projects() {
       {projects.map((project) => (
         <div key={project.title}>
           <div className="flex items-baseline gap-2">
-            <span className="font-sans text-sm font-medium text-fg">
+            <span className="font-sans text-[1.0625rem] font-medium text-fg">
               {project.title}
             </span>
             {project.badge && (
@@ -83,10 +83,10 @@ export function Projects() {
               </Link>
             )}
           </div>
-          <p className="mt-1.5 font-sans text-sm leading-6 text-fg/60">
+          <p className="mt-1.5 font-sans text-[1.0625rem] leading-[1.6] text-fg/75">
             {project.description}
           </p>
-          <p className="mt-2 font-mono text-xs text-muted/60">
+          <p className="mt-2 font-mono text-xs text-muted/80">
             {project.tags.join(" · ")}
           </p>
         </div>

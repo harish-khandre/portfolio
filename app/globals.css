@@ -3,12 +3,21 @@
 @tailwind utilities;
 
 :root {
-  --bg: 12 10 9;
-  --fg: 240 235 228;
-  --muted: 107 101 96;
-  --divider: 30 27 24;
-  --surface: 22 19 16;
-  --accent: 212 168 83;
+  --bg: 247 248 244;
+  --fg: 20 22 18;
+  --muted: 108 115 100;
+  --divider: 216 220 210;
+  --surface: 237 240 233;
+  --accent: 90 112 62;
+}
+
+.dark {
+  --bg: 9 11 8;
+  --fg: 234 237 228;
+  --muted: 112 120 103;
+  --divider: 20 24 17;
+  --surface: 14 17 12;
+  --accent: 138 158 107;
 }
 
 html {
