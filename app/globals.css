@@ -2,28 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-.heading {
-  font-family: var(--fira);
+:root {
+  --bg: 12 10 9;
+  --fg: 240 235 228;
+  --muted: 107 101 96;
+  --divider: 30 27 24;
+  --surface: 22 19 16;
+  --accent: 212 168 83;
 }
 
-.no-scrollbar::-webkit-scrollbar {
-  background: transparent;
-}
-.no-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #fafafa;
-  border-radius: 20px;
-  border: 6px solid transparent;
-  background-clip: content-box;
-  cursor: grab;
-}
-
-body::-webkit-scrollbar {
-  display: none;
-}
-body::-webkit-scrollbar-thumb {
-  display: none;
+* {
+  box-sizing: border-box;
 }
 
 body {
-  @apply bg-zinc-950;
+  background-color: rgb(var(--bg));
+  color: rgb(var(--fg));
+}
+
+::selection {
+  background-color: rgb(var(--accent));
+  color: rgb(var(--bg));
 }
