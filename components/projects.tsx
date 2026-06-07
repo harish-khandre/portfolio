@@ -1,49 +1,60 @@
-"use client";
+import Link from "next/link";
 
-import { HoverEffect } from "./ui/card-hover-effect";
-
-export function Projects() {
-  return (
-    <div className="max-w-5xl sm:mx-auto sm:px-8">
-      <HoverEffect items={projects} />
-    </div>
-  );
-}
-export const projects = [
+const projects = [
+  {
+    title: "MGNREGA RAG Analytics Platform",
+    description:
+      "AI-powered RAG over large-scale NREGA government datasets. Natural language querying across millions of records with dynamic graph generation and memory workflows.",
+    tags: ["Mastra.ai", "Claude API", "PostgreSQL"],
+    link: null,
+  },
+  {
+    title: "Agentic Research Pipeline",
+    description:
+      "Multi-source data aggregation with Mastra.ai agent workflows for large-scale document analysis. Integrated Claude API Anthropic Message Batches for structured output extraction. Built entirely with Claude Code.",
+    tags: ["Python", "Mastra.ai", "Anthropic Batches"],
+    link: null,
+  },
   {
     title: "ShelterSoul",
     description:
-      "Developed a web app to bridge the gap between mentally challenged homeless individuals and NGOs. With just a few clicks, you can help connect those in need with vital support and care services.",
+      "Platform connecting NGOs with mentally challenged homeless individuals.",
+    tags: ["Next.js", "AWS S3", "Resend"],
     link: "https://www.sheltersoul.me/",
   },
-  {
-    title: "Breedit",
-    description:
-      "built A platform which encourages pet adoption of pets who were abundoned or close to abundonment as well as provides a platform for pet owners to connect with each other and pet service providers",
-    link: "https://www.breedit.co.in/",
-  },
-  {
-    title: "Covet",
-    description:
-      "A platform that connects social media artists and local artists with potential buyers as well as thier fans. It provides a platform for artisans to showcase their work and sell their products.",
-    link: "https://covet.live",
-  },
-  {
-    title: "Uvan",
-    description:
-      "Blogging web app With CMS for youtube channel called UvanTech, Web app is used to educate the people about government schemes and policies",
-    link: "https://uvan.tech",
-  },
-  {
-    title: "Samadhan Enterprise",
-    description:
-      "A website for a real-estate company called Samadhan that provides solutions for the problems faced by the people in the context of real-estate and property management",
-    link: "https://se-eta.vercel.app/",
-  },
-  {
-    title: "Other Projects",
-    description:
-      "Notes with GPT, Thread's clone, Netflix clone and many more projects",
-    link: "https://github.com/harish-khandre",
-  },
 ];
+
+export function Projects() {
+  return (
+    <div className="space-y-8">
+      {projects.map((project) => (
+        <div key={project.title}>
+          {project.link ? (
+            <Link
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-sans text-sm font-medium text-fg transition-colors hover:text-accent"
+            >
+              {project.title} ↗
+            </Link>
+          ) : (
+            <span className="font-sans text-sm font-medium text-fg">
+              {project.title}
+            </span>
+          )}
+          <p className="mt-1 font-sans text-sm text-fg/65">
+            {project.description}
+          </p>
+          <div className="mt-2 flex flex-wrap gap-3">
+            {project.tags.map((tag) => (
+              <span key={tag} className="font-mono text-xs text-muted">
+                {tag}
+              </span>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
