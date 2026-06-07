@@ -58,15 +58,15 @@ export default function Home() {
 
         <div className="mt-16 space-y-4">
           <div className="rounded-md border border-divider p-5 text-center">
-            <p className="font-sans text-sm text-fg/45 mb-2">
+            <p className="mb-2 font-sans text-sm text-fg/45">
               Want to build something together?
             </p>
-            <a
+            <Link
               href="mailto:1.harishkhandre@gmail.com"
               className="font-mono text-sm text-brand transition-colors hover:text-brand/70"
             >
               1.harishkhandre@gmail.com →
-            </a>
+            </Link>
           </div>
           <div className="flex items-center justify-between font-mono text-xs text-muted/60">
             <span>Harish Khandre</span>
