@@ -83,7 +83,7 @@ export default function Experience() {
             <p className="mt-2 font-sans text-sm leading-7 text-fg/60">
               {item.desc}
             </p>
-            <p className="mt-2 font-mono text-xs text-muted/50">
+            <p className="mt-2 font-mono text-xs text-muted/60">
               {item.tech}
             </p>
           </li>
