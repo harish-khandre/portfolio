@@ -6,6 +6,7 @@ import Header from "@/components/header";
 import Bio from "@/components/bio";
 import WorkSection from "@/components/work-section";
 import Skills from "@/components/skills";
+import { ModeToggle } from "@/components/mode-toggle";
 
 const Divider = () => <div className="my-12 border-t border-divider" />;
 
@@ -21,27 +22,32 @@ export default function Home() {
       <div className="mx-auto max-w-[640px] px-4 py-20 sm:px-6">
         <Header />
 
-        <motion.nav
-          aria-label="Social links"
-          className="mt-5 flex items-center gap-1 font-mono text-xs text-muted"
+        <motion.div
+          className="mt-5 flex items-center justify-between"
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.25, ease: "easeOut" }}
         >
-          {socialLinks.map((link, i) => (
-            <span key={link.label} className="flex items-center gap-1">
-              {i > 0 && <span className="select-none opacity-30">·</span>}
-              <Link
-                href={link.href}
-                target={link.external ? "_blank" : undefined}
-                rel={link.external ? "noopener noreferrer" : undefined}
-                className="underline-hover transition-colors hover:text-fg"
-              >
-                {link.label}
-              </Link>
-            </span>
-          ))}
-        </motion.nav>
+          <nav
+            aria-label="Social links"
+            className="flex items-center gap-1 font-mono text-xs text-muted"
+          >
+            {socialLinks.map((link, i) => (
+              <span key={link.label} className="flex items-center gap-1">
+                {i > 0 && <span className="select-none opacity-30">·</span>}
+                <Link
+                  href={link.href}
+                  target={link.external ? "_blank" : undefined}
+                  rel={link.external ? "noopener noreferrer" : undefined}
+                  className="underline-hover transition-colors hover:text-fg"
+                >
+                  {link.label}
+                </Link>
+              </span>
+            ))}
+          </nav>
+          <ModeToggle />
+        </motion.div>
 
         <Divider />
         <Bio />
@@ -50,9 +56,22 @@ export default function Home() {
         <Divider />
         <Skills />
 
-        <div className="mt-16 flex items-center justify-between font-mono text-xs text-muted/60">
-          <span>Harish Khandre</span>
-          <span>© {new Date().getFullYear()}</span>
+        <div className="mt-16 space-y-4">
+          <div className="rounded-md border border-divider p-5 text-center">
+            <p className="font-sans text-sm text-fg/45 mb-2">
+              Want to build something together?
+            </p>
+            <a
+              href="mailto:1.harishkhandre@gmail.com"
+              className="font-mono text-sm text-brand transition-colors hover:text-brand/70"
+            >
+              1.harishkhandre@gmail.com →
+            </a>
+          </div>
+          <div className="flex items-center justify-between font-mono text-xs text-muted/60">
+            <span>Harish Khandre</span>
+            <span>© {new Date().getFullYear()}</span>
+          </div>
         </div>
       </div>
     </main>
