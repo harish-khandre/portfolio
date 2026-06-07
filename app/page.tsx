@@ -18,7 +18,7 @@ const socialLinks = [
 export default function Home() {
   return (
     <main className="min-h-screen bg-bg text-fg">
-      <div className="mx-auto max-w-[640px] px-6 py-20">
+      <div className="mx-auto max-w-[640px] px-4 py-20 sm:px-6">
         <Header />
 
         <motion.nav
@@ -35,7 +35,7 @@ export default function Home() {
                 href={link.href}
                 target={link.external ? "_blank" : undefined}
                 rel={link.external ? "noopener noreferrer" : undefined}
-                className="transition-colors hover:text-fg"
+                className="underline-hover transition-colors hover:text-fg"
               >
                 {link.label}
               </Link>
@@ -50,7 +50,7 @@ export default function Home() {
         <Divider />
         <Skills />
 
-        <div className="mt-16 flex items-center justify-between font-mono text-xs text-muted/40">
+        <div className="mt-16 flex items-center justify-between font-mono text-xs text-muted/60">
           <span>Harish Khandre</span>
           <span>© {new Date().getFullYear()}</span>
         </div>

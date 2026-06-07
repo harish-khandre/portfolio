@@ -24,8 +24,9 @@ export const TabsTrigger = ({
 }: React.ComponentPropsWithoutRef<typeof RadixTabs.Trigger>) => (
   <RadixTabs.Trigger
     className={cn(
-      "flex-1 cursor-pointer rounded-md px-4 py-2.5 font-mono text-xs uppercase tracking-widest text-muted",
-      "transition-colors data-[state=active]:bg-divider data-[state=active]:text-fg",
+      "flex-1 cursor-pointer rounded-md px-4 py-2.5 font-mono text-xs uppercase tracking-widest",
+      "text-muted/50 transition-all",
+      "data-[state=active]:bg-fg/[0.07] data-[state=active]:text-fg/90",
       className,
     )}
     {...props}

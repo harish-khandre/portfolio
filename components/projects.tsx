@@ -34,7 +34,7 @@ export function Projects() {
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-baseline gap-1 font-sans text-sm font-medium text-fg transition-colors hover:text-accent"
+              className="underline-hover group inline-flex items-baseline gap-1 font-sans text-sm font-medium text-fg transition-colors hover:text-accent"
             >
               {project.title}
               <span className="text-xs text-muted transition-colors group-hover:text-accent">
@@ -49,7 +49,7 @@ export function Projects() {
           <p className="mt-1.5 font-sans text-sm leading-6 text-fg/60">
             {project.description}
           </p>
-          <p className="mt-2 font-mono text-xs text-muted/70">
+          <p className="mt-2 font-mono text-xs text-muted/60">
             {project.tags.join(" · ")}
           </p>
         </div>
