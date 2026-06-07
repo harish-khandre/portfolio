@@ -1,24 +1,37 @@
 import Link from "next/link";
+import { Tech } from "@/components/ui/highlight";
 
 const projects = [
   {
     title: "MGNREGA RAG Analytics Platform",
-    description:
-      "AI-powered RAG over large-scale NREGA government datasets. Natural language querying across millions of records with dynamic graph generation and memory workflows.",
+    description: (
+      <>
+        AI-powered <Tech>RAG</Tech> over large-scale NREGA government datasets.
+        Natural language querying across millions of records with dynamic graph
+        generation and memory workflows.
+      </>
+    ),
     tags: ["Mastra.ai", "Claude API", "PostgreSQL"],
     link: null,
   },
   {
     title: "Agentic Research Pipeline",
-    description:
-      "Multi-source data aggregation with Mastra.ai agent workflows for large-scale document analysis. Integrated Claude API Anthropic Message Batches for structured output extraction. Built entirely with Claude Code.",
+    description: (
+      <>
+        Multi-source data aggregation with <Tech>Mastra.ai</Tech> agent
+        workflows for large-scale document analysis. Integrated{" "}
+        <Tech>Anthropic Message Batches</Tech> for structured output extraction.
+        Built entirely with <Tech>Claude Code</Tech>.
+      </>
+    ),
     tags: ["Python", "Mastra.ai", "Anthropic Batches"],
     link: null,
   },
   {
     title: "ShelterSoul",
-    description:
-      "Platform connecting NGOs with mentally challenged homeless individuals.",
+    description: (
+      <>Platform connecting NGOs with mentally challenged homeless individuals.</>
+    ),
     tags: ["Next.js", "AWS S3", "Resend"],
     link: "https://www.sheltersoul.me/",
   },

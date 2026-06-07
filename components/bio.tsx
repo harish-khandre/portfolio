@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Metric, Tech } from "@/components/ui/highlight";
 
 export default function Bio() {
   return (
@@ -10,9 +11,11 @@ export default function Bio() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
     >
-      Full Stack Engineer with 2 years shipping enterprise and government
-      platforms handling 20M+ records. TypeScript, React, and NestJS —
-      hands-on with Claude API and AI agent workflows using Mastra.ai.
+      Full Stack Engineer with <Metric>2 years</Metric> shipping enterprise and
+      government platforms handling <Metric>20M+ records</Metric>.{" "}
+      <Tech>TypeScript</Tech>, <Tech>React</Tech>, and <Tech>NestJS</Tech> —
+      hands-on with <Tech>Claude API</Tech> and AI agent workflows using{" "}
+      <Tech>Mastra.ai</Tech>.
     </motion.p>
   );
 }

@@ -1,24 +1,43 @@
+import { Metric, Tech } from "@/components/ui/highlight";
+
 const items = [
   {
     num: "01",
     title: "National Investment Pipeline",
     label: "MORTH / NHIA",
     accent: null,
-    desc: "Data sync and reporting workflows across 20M+ records shared with the Ministry of Statistics.",
+    desc: (
+      <>
+        Data sync and reporting workflows across <Metric>20M+ records</Metric>{" "}
+        shared with the Ministry of Statistics.
+      </>
+    ),
   },
   {
     num: "02",
     title: "SSC Analytics Dashboard",
     label: null,
     accent: "67% perf ↑",
-    desc: "API performance improvement via Redis caching, indexing, and aggregation optimization. Data migrations from 2M to 20M+ records.",
+    desc: (
+      <>
+        API performance improvement via <Tech>Redis</Tech> caching, indexing,
+        and aggregation optimization. Data migrations from{" "}
+        <Metric>2M to 20M+</Metric> records.
+      </>
+    ),
   },
   {
     num: "03",
     title: "Ministry of Social Justice",
     label: null,
     accent: null,
-    desc: "RBAC and analytics reporting processing 12+ government scheme datasets to surface KPIs and operational reports.",
+    desc: (
+      <>
+        <Tech>RBAC</Tech> and analytics reporting processing{" "}
+        <Metric>12+ government</Metric> scheme datasets to surface KPIs and
+        operational reports.
+      </>
+    ),
   },
 ];
 
