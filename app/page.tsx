@@ -6,13 +6,20 @@ import Header from "@/components/header";
 import Bio from "@/components/bio";
 import WorkSection from "@/components/work-section";
 import Skills from "@/components/skills";
-import { ModeToggle } from "@/components/mode-toggle";
 
 const Divider = () => <div className="my-12 border-t border-divider" />;
 
 const socialLinks = [
-  { label: "github", href: "https://github.com/harish-khandre", external: true },
-  { label: "linkedin", href: "https://www.linkedin.com/in/harish-khandre/", external: true },
+  {
+    label: "github",
+    href: "https://github.com/harish-khandre",
+    external: true,
+  },
+  {
+    label: "linkedin",
+    href: "https://www.linkedin.com/in/harish-khandre/",
+    external: true,
+  },
   { label: "email", href: "mailto:1.harishkhandre@gmail.com", external: false },
 ];
 
@@ -22,32 +29,27 @@ export default function Home() {
       <div className="mx-auto max-w-[640px] px-4 py-20 sm:px-6">
         <Header />
 
-        <motion.div
-          className="mt-5 flex items-center justify-between"
+        <motion.nav
+          aria-label="Social links"
+          className="mt-5 flex items-center gap-1 font-mono text-xs text-muted"
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.25, ease: "easeOut" }}
         >
-          <nav
-            aria-label="Social links"
-            className="flex items-center gap-1 font-mono text-xs text-muted"
-          >
-            {socialLinks.map((link, i) => (
-              <span key={link.label} className="flex items-center gap-1">
-                {i > 0 && <span className="select-none opacity-30">·</span>}
-                <Link
-                  href={link.href}
-                  target={link.external ? "_blank" : undefined}
-                  rel={link.external ? "noopener noreferrer" : undefined}
-                  className="underline-hover transition-colors hover:text-fg"
-                >
-                  {link.label}
-                </Link>
-              </span>
-            ))}
-          </nav>
-          <ModeToggle />
-        </motion.div>
+          {socialLinks.map((link, i) => (
+            <span key={link.label} className="flex items-center gap-1">
+              {i > 0 && <span className="select-none opacity-30">·</span>}
+              <Link
+                href={link.href}
+                target={link.external ? "_blank" : undefined}
+                rel={link.external ? "noopener noreferrer" : undefined}
+                className="underline-hover transition-colors hover:text-fg"
+              >
+                {link.label}
+              </Link>
+            </span>
+          ))}
+        </motion.nav>
 
         <Divider />
         <Bio />
@@ -63,7 +65,7 @@ export default function Home() {
             </p>
             <Link
               href="mailto:1.harishkhandre@gmail.com"
-              className="font-mono text-sm text-brand transition-colors hover:text-brand/70"
+              className="font-mono text-sm text-accent transition-colors hover:text-accent/70"
             >
               1.harishkhandre@gmail.com →
             </Link>

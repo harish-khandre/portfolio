@@ -22,7 +22,8 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: "Harish Khandre",
-  description: "Full Stack Engineer building enterprise and government platforms.",
+  description:
+    "Full Stack Engineer building enterprise and government platforms.",
   icons: {
     icon: ["/favicon.ico?v=4"],
     apple: ["/apple-touch-icon.png?v=4"],

@@ -1,52 +1,52 @@
-import Link from 'next/link'
-import { Tech } from '@/components/ui/highlight'
+import Link from "next/link";
+import { Tech } from "@/components/ui/highlight";
 
 const projects = [
   {
-    title: 'MGNREGA RAG Analytics Platform',
+    title: "MGNREGA RAG Analytics Platform",
     description: (
       <>
-        AI-powered <Tech>RAG</Tech> over large-scale NREGA government
-        datasets. Natural language querying across millions of records with
-        dynamic graph generation and memory workflows.
+        AI-powered <Tech>RAG</Tech> over large-scale NREGA government datasets.
+        Natural language querying across millions of records with dynamic graph
+        generation and memory workflows.
       </>
     ),
-    tags: ['Mastra.ai', 'Claude API', 'PostgreSQL'],
-    github: 'https://github.com/harish-khandre/MGNREGA-RAG',
+    tags: ["Mastra.ai", "Claude API", "PostgreSQL"],
+    github: "https://github.com/harish-khandre/MGNREGA-RAG",
     live: null,
     badge: null,
   },
   {
-    title: 'Agentic Research Pipeline',
+    title: "Agentic Research Pipeline",
     description: (
       <>
         Multi-source data aggregation with <Tech>Mastra.ai</Tech> agent
-        workflows for large-scale document analysis. Integrated{' '}
-        <Tech>Anthropic Message Batches</Tech> for structured output
-        extraction. Built entirely with <Tech>Claude Code</Tech>.
+        workflows for large-scale document analysis. Integrated{" "}
+        <Tech>Anthropic Message Batches</Tech> for structured output extraction.
+        Built entirely with <Tech>Claude Code</Tech>.
       </>
     ),
-    tags: ['Python', 'Mastra.ai', 'Anthropic Batches'],
+    tags: ["Python", "Mastra.ai", "Anthropic Batches"],
     github: null,
     live: null,
-    badge: 'private',
+    badge: "private",
   },
   {
-    title: 'ShelterSoul',
+    title: "ShelterSoul",
     description: (
       <>
         Full-stack platform connecting NGOs with mentally challenged homeless
         individuals. Built with <Tech>Next.js</Tech> App Router, file uploads
-        via <Tech>AWS S3</Tech>, and transactional email through{' '}
+        via <Tech>AWS S3</Tech>, and transactional email through{" "}
         <Tech>Resend</Tech>.
       </>
     ),
-    tags: ['Next.js', 'AWS S3', 'Resend'],
-    github: 'https://github.com/harish-khandre/sheltersoul',
-    live: 'https://www.sheltersoul.me/',
+    tags: ["Next.js", "AWS S3", "Resend"],
+    github: "https://github.com/harish-khandre/sheltersoul",
+    live: "https://www.sheltersoul.me/",
     badge: null,
   },
-]
+];
 
 export function Projects() {
   return (
@@ -67,7 +67,7 @@ export function Projects() {
                 href={project.live}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline-hover font-mono text-xs text-muted transition-colors hover:text-brand"
+                className="underline-hover font-mono text-xs text-muted transition-colors hover:text-accent"
               >
                 live ↗
               </Link>
@@ -77,7 +77,7 @@ export function Projects() {
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline-hover font-mono text-xs text-muted transition-colors hover:text-brand"
+                className="underline-hover font-mono text-xs text-muted transition-colors hover:text-accent"
               >
                 github ↗
               </Link>
@@ -87,10 +87,10 @@ export function Projects() {
             {project.description}
           </p>
           <p className="mt-2 font-mono text-xs text-muted/60">
-            {project.tags.join(' · ')}
+            {project.tags.join(" · ")}
           </p>
         </div>
       ))}
     </div>
-  )
+  );
 }
