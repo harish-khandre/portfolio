@@ -35,8 +35,10 @@ const projects = [
     title: 'ShelterSoul',
     description: (
       <>
-        Platform connecting NGOs with mentally challenged homeless
-        individuals.
+        Full-stack platform connecting NGOs with mentally challenged homeless
+        individuals. Built with <Tech>Next.js</Tech> App Router, file uploads
+        via <Tech>AWS S3</Tech>, and transactional email through{' '}
+        <Tech>Resend</Tech>.
       </>
     ),
     tags: ['Next.js', 'AWS S3', 'Resend'],
