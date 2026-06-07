@@ -55,7 +55,7 @@ export default function Experience() {
     <div>
       <div className="flex items-baseline justify-between">
         <span className="font-mono text-xs font-medium uppercase tracking-widest text-fg/80">
-          Pordios Labs
+          Prodios Labs
         </span>
         <span className="font-mono text-xs text-muted">Aug 2024 – Present</span>
       </div>

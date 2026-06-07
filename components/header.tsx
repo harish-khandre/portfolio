@@ -19,7 +19,7 @@ export default function Header() {
         Harish Khandre
       </motion.h1>
       <motion.p className="mt-2 font-sans text-[1.0625rem] text-muted" {...fadeUp(0.1)}>
-        Full Stack Engineer at Pordios Labs
+        Full Stack Engineer at Prodios Labs
       </motion.p>
     </header>
   );
